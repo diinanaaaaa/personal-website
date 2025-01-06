@@ -1,0 +1,144 @@
+<html>
+<head>
+    <!-- Metadata and External Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Diyanah's Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- External CSS File -->
+    <link rel="icon" href="images/1.png" type="image/png" sizes="16x16"> <!-- Favicon -->
+    <link rel="stylesheet" href="hover.css" type="text/css"> <!-- Hover Effects CSS -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <marquee behavior="scroll" direction="left">
+            <!--Marquee Text -->
+            <h1>🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄‍🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄</h1>
+        </marquee>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Logo with Style -->
+        <span class="logo" style="font-size: 24px; color: #fff; font-weight: 700;">𖹭 𝓭𝓲𝓭𝓲 𖹭</span>
+        <!-- Navigation Links -->
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="hobby.html">My Hobby</a>
+        <a href="contact-me.html">Contact Me</a>
+    </nav>
+	<p><img src="images/starrr.png" class="sticker" align="left">
+	<img src="images/starrr.png" class="sticker"align="right"></p>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <tr>
+            <td>
+                <!-- Personal Greeting Section -->
+                <p><u><b>Hi, I'm Diyanah!</b></u></p>
+				<p style="font-family:'Blackletter'; font-size:25;"><b>Welcome to the Vibes °⋆‧₊ ̊🖇️✩ ₊ ̊🎧⊹♡</b></p>
+                <p><b>
+                    Alhamdulillah, first and foremost, I want to thank Allah for all the blessings and strength to make this possible. 
+                    To my family, you’ve been my rock 🤟 your support means everything to me. 
+                    To my amazing friends, thank you for always cheering me on and being there through it all. 
+                    And to my lecturer, our cool Sir Aiman, your guidance and encouragement have truly shaped my journey. 
+                    This wouldn’t have been possible without all of you. Thank you from the bottom of my heart!
+                </b></p>
+            </td>
+        </tr>
+    </div>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <!-- Slideshow Image 1 -->
+        <div class="mySlides fade">
+            <img src="images/img_1.PNG" alt="Image 1">
+        </div>
+
+        <!-- Slideshow Image 2 -->
+        <div class="mySlides fade">
+            <img src="images/img_2.PNG" alt="Image 2">
+        </div>
+
+        <!-- Slideshow Image 3 -->
+        <div class="mySlides fade">
+            <img src="images/img_3.PNG" alt="Image 3">
+        </div>
+
+        <!-- Previous and Next Buttons for Slideshow -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <!-- Dots for Slideshow Navigation -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Back to Top Link -->
+    <p align="center">
+        <a href="#top" class="jump-to-top">Back to Top</a>
+    </p>
+
+	
+    <!-- Footer Section -->
+    <footer style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #44330e;">
+        <!-- Left Footer Content (Text and Email) -->
+        <div style="flex: 1; color: #f1f1f1;">
+            <p>&copy; 2024 | Design by Diyanah Nabila. All rights reserved</p>
+            <p><a href="mailto:nurdiyanahnabila@gmail.com" style="color: #f1f1f1;">Email me</a></p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div style="display: flex; gap: 20px;">
+            <!-- Instagram Link and Icon -->
+            <a href="https://www.instagram.com/diyanahnabila/profilecard/?igsh=MWdldW8wMHAzYW9iOQ==" target="_blank">
+                <img src="images/insta.jpeg" alt="Instagram" style="width: 30px; height: 30px;"/>
+            </a>
+            <!-- TikTok Link and Icon -->
+            <a href="https://www.tiktok.com/@pistchiourrna?_t=ZS-8spkh1mVpIu&_r=1" target="_blank">
+                <img src="images/tiktok.jpeg" alt="TikTok" style="width: 30px; height: 30px;"/>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript Section for Slideshow Functionality -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Function to go to the next or previous slide
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Function to show a specific slide
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // Function to display the current slide
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</body>
+</html>
+
+

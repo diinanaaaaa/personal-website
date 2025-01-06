@@ -1,0 +1,198 @@
+<html>
+<head>
+    <!-- Meta data and external links like CSS, icon, and hover styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby | Diyanah's Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- External CSS for styling -->
+    <link rel="icon" href="images/1.png" type="image/png" sizes="16x16"> <!-- Website icon -->
+    <link rel="stylesheet" href="hover.css" type="text/css"> <!-- External hover effect CSS -->
+</head>
+<body>
+
+    <!-- Header Section: Contains the welcome message -->
+    <header>
+        <marquee behavior="scroll" direction="left">
+            <h1>🐻‍❄️🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄‍🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄🐻‍❄</h1> <!-- scrolling text -->
+        </marquee>
+    </header>
+
+    <!-- Navigation Bar: Links to different pages of the website -->
+    <nav class="navbar">
+        <span class="logo" style="font-size: 24px; color: #fff; font-weight: 700;">𖹭 𝓭𝓲𝓭𝓲 𖹭</span> <!-- Logo -->
+        <a href="index.html">Home</a> <!-- Link to Home page -->
+        <a href="about-me.html">About Me</a> <!-- Link to About Me page -->
+        <a href="hobby.html">My Hobby</a> <!-- Link to My Hobby page -->
+        <a href="contact-me.html">Contact Me</a> <!-- Link to Contact Me page -->
+    </nav>
+
+    <!-- Main Content Section -->
+    <section style="text-align: center;">
+        <!-- Images section: Decorative images placed at left and right -->
+        <p>
+            <img src="images/scream.png" class="sticker" style="float: left; margin: 10px;"> <!-- Left image -->
+            <img src="images/scream.png" class="sticker" style="float: right; margin: 10px;"> <!-- Right image -->
+        </p>
+
+        <!-- Main Heading for Hobbies -->
+        <h2 style="font-family: 'Papyrus', sans-serif; font-size: 36px; color: #44330e; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px;">
+            🎨 My Hobbies & Passions 🎶
+        </h2>
+
+        <!-- Hobbies List Section -->
+        <div class="hobby-list" style="max-width: 900px; margin: 0 auto; text-align: left; color: #44330e; font-family: 'Verdana', sans-serif;">
+        
+            <!-- First Hobby Section: Fitness & Wellness -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="font-size: 28px; font-weight: bold; color: black; font-family: 'Cursive'; text-align: center;">
+                    <i>1. FITNESS & WELLNESS:</i>
+                </h3>
+                <ol style="font-size: 22px; font-weight: bold; padding-left: 20px; line-height: 1.8;">
+                    <li>Yoga & Meditation 🧘</li> <!-- Item in the list -->
+                    <li>Running & Hiking</li>
+                    <li>Healthy Cooking 🍲</li>
+                </ol>
+            </div>
+
+            <!-- Second Hobby Section: Creative Pursuits -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="font-size: 28px; font-weight: bold; color: black; font-family: 'Cursive'; text-align: center;">
+                    <i>2. CREATIVE PURSUITS:</i>
+                </h3>
+                <ul style="font-size: 22px; font-weight: bold; padding-left: 20px;">
+                    <li>Photography (Press the Word to see the explanation)</li>
+                </ul>
+
+                <!-- Image Gallery with interactive text on images -->
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <!-- Image 1: KLCC -->
+                    <figure>
+                        <img src="images/klcc.jpg" alt="KLCC">
+                        <figcaption>
+                            <dl>
+                                <dt id="klcc-text">KLCC</dt>
+                            </dl>
+                        </figcaption>
+                        <script>
+                            const figCaption = document.getElementById('klcc-text');
+                            figCaption.addEventListener('click', () => {
+                                figCaption.textContent =
+                                    figCaption.textContent === 'KLCC' ? 'Kuala Lumpur City Centre' : 'KLCC';
+                            });
+                        </script>
+                    </figure>
+
+                    <!-- Image 2: Sunset view -->
+                    <figure>
+                        <img src="images/sunset.jpg" alt="view">
+                        <figcaption>
+                            <dl>
+                                <dt id="view-text">View</dt>
+                            </dl>
+                        </figcaption>
+                        <script>
+                            const viewText = document.getElementById('view-text');
+                            viewText.addEventListener('click', () => {
+                                viewText.textContent =
+                                    viewText.textContent === 'View' ? 'Sunset View' : 'View';
+                            });
+                        </script>
+                    </figure>
+
+                    <!-- Image 3: Nature -->
+                    <figure>
+                        <img src="images/langit.jpg" alt="Nature">
+                        <figcaption>
+                            <dl>
+                                <dt id="nature-text">Nature</dt>
+                            </dl>
+                        </figcaption>
+                        <script>
+                            const natureText = document.getElementById('nature-text');
+                            natureText.addEventListener('click', () => {
+                                natureText.textContent =
+                                    natureText.textContent === 'Nature' ? "Getting Highland's View" : 'Nature';
+                            });
+                        </script>
+                    </figure>    
+                </div>
+
+                <!-- Singing Section -->
+                <ul style="font-size: 22px; font-weight: bold; padding-left: 20px;">
+                    <li>Singing</li>
+                </ul>
+                
+                <!-- Image Gallery for Karaoke -->
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <figure style="text-align: center; width: 250px; border: 3px solid #44330e; border-radius: 20px; padding: 10px; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);">
+                        <img src="images/karok.jpg" alt="Karaoke" style="width: 100%; border-radius: 15px;">
+                        <figcaption>Karaoke with Friends</figcaption>
+                    </figure>
+                    <figure style="text-align: center; width: 250px; border: 3px solid #44330e; border-radius: 20px; padding: 10px; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);">
+                        <img src="images/karok2.jpg" alt="Karaoke" style="width: 100%; border-radius: 15px;">
+                        <figcaption>Karaoke pt. 2</figcaption>
+                    </figure>
+                    <figure style="text-align: center; width: 250px; border: 3px solid #44330e; border-radius: 20px; padding: 10px; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);">
+                        <img src="images/mic.jpg" alt="Microphone" style="width: 100%; border-radius: 15px;">
+                        <figcaption>Microphone</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Third Hobby Section: Music -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="font-size: 28px; font-weight: bold; color: black; font-family: 'Cursive'; text-align: center;">
+                    <i>3. MUSIC:</i>
+                </h3>
+                <ul style="font-size: 22px; font-weight: bold; padding-left: 20px;">
+                    <p>
+                        <li style="list-style-image:url(images/love.png);list-style-position:inside">Listening to my favorite songs ♪</p>
+                    </li>
+                    <p><li style="list-style-image:url(images/love.png);list-style-position:inside">Exploring new genres</li></p>
+                    <p><li style="list-style-image:url(images/love.png);list-style-position:inside">Playing the piano 🎹</li></p>
+                </ul>
+            </div>
+
+            <!-- Fourth Hobby Section: Vlog -->
+            <div align="center">
+                <h3 class="vlog-title">
+                    <i>4. VLOG:</i>
+                </h3>
+                <p class="vlog-description">
+                    <b>Let's watch my VLOG that I made myself!</b>
+                </p>
+                <figure class="vlog-video-container">
+                    <video class="vlog-video" controls autoplay>
+                        <source src="images/VLOG.mp4" type="video/mp4">
+                    </video>
+                </figure>
+            </div>
+
+            <!-- Fifth Hobby Section: Audio -->
+            <div style="margin-bottom: 40px; text-align: center;">
+                <h3 style="font-size: 28px; font-weight: bold; color: black; font-family: 'Cursive'; margin-bottom: 15px; text-transform: uppercase;">
+                    <i>5. AUDIO:</i>
+                </h3>
+                <p style="font-size: 20px; font-family: 'Papyrus', sans-serif; color: #6b4f3f; margin-bottom: 20px;">
+                    <b>Here’s a little audio snippet of my favorite playlist. Sit back, relax, and enjoy the vibes! 🎧</b>
+                </p>
+                <audio controls style="width: 100%; max-width: 300px; outline: none; border: 3px solid #44330e; border-radius: 10px; padding: 5px;">
+                    <source src="tws.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Link -->
+    <p align="center">
+        <a href="#top" class="jump-to-top">Back to Top</a>
+    </p>
+
+    <!-- Footer Section: Contains copyright info and links -->
+    <footer>
+        <p align="center">© 2025 Diyanah's Personal Website | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
